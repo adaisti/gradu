@@ -1,0 +1,3 @@
+result filter=lfs diff=lfs merge=lfs -text
+result2 filter=lfs diff=lfs merge=lfs -text
+wikipediadata filter=lfs diff=lfs merge=lfs -text
