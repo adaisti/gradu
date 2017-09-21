@@ -28,7 +28,7 @@ def main():
 	#	word2 = "".join(word2.split())
 	#	print(word1, word2) 
 
-	f = open('/home/adahyvar/gradu/testidata/set2_vectors.txt', 'r')
+	#f = open('testidata/set2_vectors.txt', 'r')
 	
 	lines = f.read()
 
@@ -42,17 +42,12 @@ def main():
 
 	scores = []
 
-	words = []
-
-	f2 = open('/home/adahyvar/gradu/testidata/set2_kaannos_utf-8.tsv', 'r')
+	f2 = open('testidata/set2_kaannos_utf-8.tsv', 'r')
 	lines2 = f2.read()
 
 	for line in lines2.split("\n"):
 		score = line.split("\t")[2]
 		scores.append(score)
-		word1 = line.split("\t")[3]
-		word2 = line.split("\t")[4] 
-		words.append(word1 + " " + word2)
 
 	similarities = []
 
@@ -61,20 +56,10 @@ def main():
 
 	similarities = similarities[1:]	#1 koska eka rivi on sellainen turha
 	scores = scores[1:]#
-	words = words[1:]
 
-	for i in range(0, len(similarities)):	
-		#print(words[i], similarities[i], scores[i])
+	#for i in range(0, len(similarities)):	
+	#	print(similarities[i], scores[i])
 
-		d = 0.2
-
-
-		#if float(scores[i])/10 < similarities[i] + d and float(scores[i])/10 > similarities[i] - d:
-		#	print(words[i], similarities[i], scores[i])
-
-
-		if not (float(scores[i])/10 < similarities[i] + d and float(scores[i])/10 > similarities[i] - d):
-			print(words[i], similarities[i], scores[i])
 	scores = np.array(scores)
 
 	#np.isfinite(similarities).any()
