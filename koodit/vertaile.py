@@ -59,7 +59,7 @@ def main():
 	#for i in range(0, len(similarities)):	
 	#	print(similarities[i], scores[i])
 
-	#scores = np.array(scores)
+	scores = np.array(scores)
 
 	#np.isfinite(similarities).any()
 	#np.isfinite(np.sum(scores))
