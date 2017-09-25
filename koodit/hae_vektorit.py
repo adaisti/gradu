@@ -10,9 +10,11 @@ import numpy as np
 
 def main():
 	f = open('/home/adahyvar/gradu/testidata/set2_kaannos_utf-8.tsv', 'r')
+
 	lines = f.read()
 
 	f2 = open('vector_list.txt', 'r')
+	
 	lines2 = f2.read()
 
 	vectors = []
