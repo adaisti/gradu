@@ -67,15 +67,15 @@ def main():
 	print(']')
 
 
-	print("window.names=[", end ='')
+	print('window.names=["', end ='')
 
 
 	for i in range(len(vectors_embedded) - 1):
 		print(words[i], end ='')
-		print(', ', end ='')
+		print('", "', end ='')
 
 	print(words[-1], end ='')
-	print(']')
+	print('"]')
 	
 
 
