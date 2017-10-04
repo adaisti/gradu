@@ -1,0 +1,74 @@
+<body>
+<div id="3d"></div>
+<div id="legend"></div>
+<script src="three.js"></script>
+<script src="data.js"></script>
+<script>
+var scene = new THREE.Scene();
+var div = document.getElementById("3d")
+const width = 640
+const height = 480
+var camera = new THREE.PerspectiveCamera( 75, width / height, 0.1, 1000 );
+
+camera.position.z = 100
+
+var renderer = new THREE.WebGLRenderer();
+renderer.setSize( width, height );
+div.appendChild( renderer.domElement );
+
+
+var geom = new THREE.Geometry();
+var material = new THREE.PointCloudMaterial({
+    size: 4,
+    transparent: true,
+    opacity: 0.5,
+    vertexColors: true,
+    sizeAttenuation: true,
+    color: 0xffffff
+});
+
+var legenda = "<ul style='height:100px'>"
+
+for (var i = xcords.length - 1; i >= 0; i--) {
+	geom.vertices.push(new THREE.Vector3(xcords[i],ycords[i],zcords[i]))
+	var color = new THREE.Color(0x00ff00);
+    color.setHSL(Math.random(), 1, 0.5);
+	geom.colors.push(color)
+	legenda += "<li style='color:#"+color.getHexString()+"'>"+names[i]+"</li>"
+};
+legenda += "</ul>"
+document.getElementById("legend").innerHTML = legenda
+
+cloud = new THREE.PointCloud(geom, material);
+cloud.name = "particles";
+scene.add(cloud);
+
+function render () {
+	requestAnimationFrame(render)
+	renderer.render(scene, camera)
+}
+render()
+
+
+document.addEventListener('keydown', (event) => {
+  const keyName = event.key;
+
+  if (keyName === 'ArrowLeft') {
+    cloud.rotation.y += -0.1
+  }
+
+  if (keyName === 'ArrowUp') {
+    cloud.rotation.x += 0.1
+  }
+
+  if (keyName === 'ArrowRight') {
+    cloud.rotation.y += 0.1
+  }
+
+  if (keyName === 'ArrowDown') {
+    cloud.rotation.x += -0.1
+  }
+}, false);
+
+</script>
+</body>

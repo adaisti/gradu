@@ -1,32 +1,43 @@
-kuusi	mänty
-kuusi	viisi
-peli	leikki
-aamu	ilta
-vasikka	lehmä
-juusto	feta
-uhka	vaara
-vuori	kangas
-leipä	vehnä
-este	haaste
-valo	pimeä
-aikuinen	lapsi
-mäki	vuori
-pelko	kauhu
-uni	painajainen
-meri	järvi
-maa	valtio
-multa	maa
-honka	mänty
-laiva	vene
-kuume	flunssa
-pyrstötähti	komeetta
-observatorio	tähtitorni
-äiti	isä
-Suomi	suomalainen
-Ruotsi	Suomi
-elämä	kuolema
-syntymä	kuolema
-seula	siivilä
+kuusi	mänty	VIERUSKÄSITE
+kuusi	viisi	VIERUSKÄSITE
+peli	leikki	SYNONYYMI
+aamu	ilta	ANTONYYMI
+vasikka	lehmä	HYPONYYMI	KUVAINNOLLINEN
+juusto	feta	HYPERONYYMI
+uhka	vaara	SYNONYYMI
+vuori	kangas	VIERUSKÄSITE	KAKSOISMERKITYS
+ruisleipä	patonki	VIERUSKÄSITE
+este	haaste	SYNONYYMI
+valo	pimeä	ANTONYYMI
+aikuinen	lapsi	ANTONYYMI
+mäki	vuori	SYNONYYMI
+pelko	kauhu	SYNONYYMI
+uni	painajainen	SYNONYYMI
+meri	järvi	VIERUSKÄSITE
+maa	valtio	SYNONYYMI
+multa	maa	SYNONYYMI
+honka	mänty	SYNONYYMI
+laiva	vene	SYNONYYMI
+kuume	flunssa	VIERUSKÄSITE
+pyrstötähti	komeetta	SYNONYYMI
+observatorio	tähtitorni	SYNONYYMI
+äiti	isä	ANTONYYMI
+Suomi	suomalainen	VIERUSKÄSITE
+Ruotsi	Suomi	VIERUSKÄSITE
+elämä	kuolema	ANTONYYMI
+syntymä	kuolema	ANTONYYMI
+seula	siivilä	SYNONYYMI
+hevonen	muuli	VIERUSKÄSITE
+joki	puro	SYNONYYMI
+allergia	erikoisruokavalio	VIERUSKÄSITE
+ravintola	ruokala	VIERUSKÄSITE
+eduskunta	parlamentti	SYNONYYMI
+hälytysajoneuvo	ambulanssi	HYPERONYYMI
+äiti	nainen	HYPONYYMI
+lapsi	äiti	VIERUSKÄSITE
+maa	Suomi	HYPERONYYMI
+ministeri	presidentti	VIERUSKÄSITE
+haava	naarmu	SYNONYYMI
 
 
 
@@ -34,42 +45,46 @@ seula	siivilä
 
 
 
-
-
-
-
-samanlaisuus	ero
-palkinto	kiitos
-peli	soitin
-suru	ero
-kilpailu	etu
-seppä	rauta
-lamppu	henki
-aika	vuosi
-housut	hattu
-hissi	portaat
-joki	metsä
-lapio	vasara
-paperi	kangas
+samanlaisuus	ero 	ANTONYYMI
+palkinto	kiitos	VIERUSKÄSITE
+peli	soitin	SYNONYYMI
+suru	ero 	
+seppä	rauta	
+aika	vuosi	
+housut	hattu	VIERUSKÄSITE
+hissi	portaat	VIERUSKÄSITE
+joki	metsä	VIERUSKÄSITE
+lapio	vasara	VIERUSKÄSITE
+paperi	kangas	VIERUSKÄSITE
 multa	hauta
-omena	tomaatti
-kaupunki	valtio
-lämmitys	halko
-sairaus	huimaus
-äiti	nainen
-lapsi	äiti
-maa	Suomi
-ministeri	presidentti
-nainen	lääkäri
-meri	harakka
-pettymys	epätoivo
-vaha	pinta
-vaha	kiille
-jälleenrakentaminen	rauha
-aloitusvalikko	peli
-sarjakuva	lehti
-
-
+omena	tomaatti	VIERUSKÄSITE
+kaupunki	valtio	VIERUSKÄSITE
+lämmitys	halko	VIERUSKÄSITE
+sairaus	huimaus	HYPERONYYMI
+nainen	lääkäri	VIERUSKÄSITE
+leipä	vehnä
+pettymys	epätoivo	VIERUSKÄSITE
+vaha	pinta	
+vaha	kiille	
+jälleenrakentaminen	rauha	VIERUSKÄSITE
+aloitusvalikko	peli	
+reki	vaunut	VIERUSKÄSITE
+autotie	polku	VIERUSKÄSITE
+susi	eläin	HYPONYYMI
+susi	nisäkäs	HYPONYYMI
+susi	kotka	VIERUSKÄSITE
+matelija	nisäkäs	VIERUSKÄSITE
+näppäimistö	hiiri	VIERUSKÄSITE 	KAKSOISMERKITYS
+sormi	käsi	MERONYYMI
+ratti	auto 	MERONYYMI
+sivu	kirja 	MERONYYMI
+metsä	koivu 	HOLONYYMI
+ammattikorkeakoulu	ala-aste	VIERUSKÄSITE
+veitsi	juomalasi	VIERUSKÄSITE
+olut	Alko 	
+tulostin	toimisto	MERONYYMI
+värikynä	tulostin 	VIERUSKÄSITE
+sakset	paperi	VIERUSKÄSITE
 
 
 
@@ -115,11 +130,14 @@ ihminen	virtaus
 tilannetaju	jakoavain
 nuudeli	lauta
 juoma	epävarmuus
+este	reki
 
 
-
-
-sinikello	minuutti
+sarjakuva	lehti
+vesi	pullo
+lamppu	henki
+kilpailu	etu
+meri	harakka	
 
 
 
@@ -132,6 +150,8 @@ puukko	puu
 puutuminen	puu
 silmu	silmä
 taipumus	taipuminen
+seikka	seikkailu
+
 
 
 
