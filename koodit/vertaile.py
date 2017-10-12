@@ -3,6 +3,28 @@
 
 
 
+#ajo-ohje
+#ensin print_wordsillä sanat omilla riveillään tiedostoon
+#sitten siitä tiedostosta vektoritiedosto fasttextin print-word-vectorsilla  _vectors -tiedostoon
+#ja siitä sitten loppuosalla tätä koodia vertailut
+
+
+# tuloksia
+
+# itse opetettu enkku: 
+# rw: SpearmanrResult(correlation=0.39995046504647752, pvalue=5.9064952459193522e-79)
+# ws353: SpearmanrResult(correlation=0.61896880486607464, pvalue=1.0358009632396432e-38)
+
+# netistä ladattu enkku:
+# rw: SpearmanrResult(correlation=0.45743263313679539, pvalue=1.1186986601267153e-105)
+# ws353: SpearmanrResult(correlation=0.6677145487051418, pvalue=6.4635265180046649e-47)
+
+# paperin mukaan:
+# rw: 47
+# ws353: 71
+
+
+
 import subprocess
 from scipy.spatial.distance import cosine
 from scipy.stats import spearmanr
@@ -12,9 +34,10 @@ import numpy as np
 
 def print_words():
 	#f = open('/home/adahyvar/gradu/testidata/combined.tab', 'r')
+	f = open('/home/adahyvar/gradu/testidata/rw.txt', 'r')
 	#f = open('/Users/Ada/gradu/testidata/combined.tab', 'r')
 
-	f = open('/Users/Ada/gradu/testidata/suomi1.tsv', 'r')
+	#f = open('/Users/Ada/gradu/testidata/suomi1.tsv', 'r')
 
 	lines = f.read()
 	
@@ -66,11 +89,12 @@ def main():
 	#	print(word1, word2) 
 
 	#f = open('/home/adahyvar/gradu/testidata/set2_vectors.txt', 'r')
-	#f = open('/home/adahyvar/gradu/testidata/combined_vectors.txt', 'r')
+	f = open('/home/adahyvar/gradu/testidata/combined_vectors.txt', 'r')
+	#f = open('/home/adahyvar/gradu/testidata/rw_vectors.txt', 'r')	#tai mikä tiedostonimeksi tuleekaan
 	
 	#f = open('/Users/Ada/gradu/testidata/combined_vectors.txt', 'r')
 	#f = open('/Users/Ada/gradu/testidata/set2_suomi_vektorit.txt', 'r')
-	f = open('/Users/Ada/gradu/testidata/combined_vectors.txt', 'r')
+	#f = open('/Users/Ada/gradu/testidata/combined_vectors.txt', 'r')
 	
 	
 
@@ -88,9 +112,10 @@ def main():
 
 
 	#f2 = open('/home/adahyvar/gradu/testidata/set2_kaannos_utf-8.tsv', 'r')
-	#f2 = open('/home/adahyvar/gradu/testidata/combined.tab', 'r')
+	f2 = open('/home/adahyvar/gradu/testidata/combined.tab', 'r')
+	#f2 = open('/home/adahyvar/gradu/testidata/rw.txt', 'r')
 	
-	f2 = open('/Users/Ada/gradu/testidata/combined.tab', 'r')
+	#f2 = open('/Users/Ada/gradu/testidata/combined.tab', 'r')
 	#f2 = open('/Users/Ada/gradu/testidata/suomi1.tsv', 'r')
 	#f2 = open('/Users/Ada/gradu/testidata/set2_kaannos_utf-8.tsv', 'r')
 
@@ -107,7 +132,8 @@ def main():
 
 	for line in lines2.split("\n"):
 
-
+		if line == "":
+			continue
 
 		score = line.split("\t")[2]
 		scores.append(score)

@@ -24,7 +24,7 @@ opas
 oppaalla
 seppä
 sepällä
-ohjelmoila
+ohjelmoija
 ohjelmoijalla
 johtaja
 johtajalla
