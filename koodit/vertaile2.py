@@ -23,6 +23,45 @@ from scipy.stats import spearmanr
 import numpy as np
 import argparse
 
+def alternative_spearman(set_1, set_2):
+	# order the sets
+	set_1_ord = sorted(set_1)
+	set_2_ord = sorted(set_2)	
+
+	# append relevant rank to each value in set
+	set_1_ranked = []
+	set_2_ranked = []	
+
+	for i in range(len(set_1)):
+		set_1_ranked.append([set_1[i], set_1_ord.index(set_1[i])+1])	
+
+	for i in range(len(set_2)):
+		set_2_ranked.append([set_2[i], set_2_ord.index(set_2[i])+1])	
+
+	#print set_1_ranked
+	#print set_2_ranked	
+
+	# calculate d
+	d = []
+	for i in range(len(set_1_ranked)):
+		d.append(set_1_ranked[i][1] - set_2_ranked[i][1])
+	# print(d)	
+
+	# calculate d^2
+	d_sq = [i**2 for i in d]
+	#print d_sq	
+
+	# sum d^2
+	sum_d_sq = sum(d_sq)
+	#print sum_d_sq	
+
+	# calculate n^3 - n
+	n_cu_min_n = len(set_1)**3 - len(set_1)
+	#print n_cu_min_n	
+
+	# calculate r
+	r = 1 - ((6.0*sum_d_sq)/n_cu_min_n)
+	print(r)
 
 
 def correlation(args):
@@ -44,7 +83,6 @@ def correlation(args):
 	words = []
 	
 	similarities = []
-	#similarities = np.empty(2034)
 	similarities2 = []
 
 
@@ -74,11 +112,6 @@ def correlation(args):
 
 
 
-# for v1, v2 in zip(vectors, vectors[1: ] )
-# for v1, v2 in zip(vectors[::2], vectors[1::2 ] )
-
-
-
 	for i in range(0, len(vectors) - 1, 2):
 		similarities.append(1 - cosine(vectors[i], vectors[i + 1]))
 		#np.append(similarities, 1 - cosine(vectors[i], vectors[i + 1]))
@@ -92,10 +125,10 @@ def correlation(args):
 	for i in range(0, len(vectors) - 1, 2):
 		similarities2.append(1 - cosine(vectors2[i], vectors2[i + 1]))
 
-	#similarities = similarities[1:]	#1 koska eka rivi on sellainen turha
-	#similarities2 = similarities2[1:]
-	#scores = scores[1:]
-	#words = words[1:]
+	similarities = similarities[1:]	#1 koska eka rivi on sellainen turha
+	similarities2 = similarities2[1:]
+	scores = scores[1:]
+	words = words[1:]
 
 	amount = 0
 
@@ -120,13 +153,16 @@ def correlation(args):
 #	for key in sorted(pairs):
 #		print(key, pairs[key])
 
-	print(len(similarities))
-	print(len(scores))
+#	print(len(similarities))
+#	print(len(scores))
 #	print(similarities2)
 #	print(scores)
 
 	print(spearmanr(similarities, scores))
-#	print(spearmanr(similarities2, scores))
+	alternative_spearman(similarities, scores)
+#	print(rpy2.robjects.r.cor(similarities, scores, method="spearman"))
+	print(spearmanr(similarities2, scores))
+	alternative_spearman(similarities2, scores)
 #	print(amount/len(similarities))
 
 

@@ -7,8 +7,8 @@ def print_words(args):
 	for line in lines.split("\n"):
 		if line == "":
 			continue
-		word1 = line.split("\t")[0]
-		word2 = line.split("\t")[1]
+		word1 = line.split("\t")[3]
+		word2 = line.split("\t")[4]
 		print(word1.lower())
 		print(word2.lower())
 

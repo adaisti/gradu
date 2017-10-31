@@ -52,8 +52,8 @@ def correlation(args):
 
 		score = line.split("\t")[2]
 		scores.append(score)
-		word1 = line.split("\t")[0]
-		word2 = line.split("\t")[1]
+		word1 = line.split("\t")[3]
+		word2 = line.split("\t")[4]
 
 		#word1 = line.split("\t")[3]
 		#word2 = line.split("\t")[4]
@@ -61,12 +61,14 @@ def correlation(args):
 		words.append(word1 + " " + word2)
 
 
-	for i in range(0,len(vectors) - 2,2):
-		similarities.append(1 - cosine(vectors[i], vectors[i + 1]))
 
-	similarities = similarities[1:]	#1 koska eka rivi on sellainen turha
-	scores = scores[1:]
-	words = words[1:]
+	for i in range(0,len(vectors) - 2, 2):
+#		if (int(vectors[i].all) < 0 and vectors[i].all > 0) or (vectors[i + 1].all < 0 and vectors[i + 1].all > 0 ):
+		if np.all(vectors[i] == 0) or np.all(vectors[i + 1] == 0):
+			similarities.append(0)
+		else:
+			similarities.append(1 - cosine(vectors[i], vectors[i + 1]))
+
 
 
 	for i in range(0, len(similarities)):	
@@ -75,8 +77,8 @@ def correlation(args):
 		d = 0.2
 
 
-		if not (float(scores[i])/10 < similarities[i] + d and float(scores[i])/10 > similarities[i] - d):
-			print(words[i], similarities[i], scores[i])
+		#if not (float(scores[i])/10 < similarities[i] + d and float(scores[i])/10 > similarities[i] - d):
+		#	print(words[i], similarities[i], scores[i])
 
 	scores = np.array(scores)
 
