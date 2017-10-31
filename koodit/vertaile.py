@@ -36,21 +36,23 @@ def correlation(args):
 
 	similarities = []
 
-	for i in range(0,len(vectors) - 2, 2):
+	for i in range(0,len(vectors) - 1, 2):
 		if np.all(vectors[i] == 0) or np.all(vectors[i + 1] == 0):
 			similarities.append(0)
 		else:
 			similarities.append(1 - cosine(vectors[i], vectors[i + 1]))
 
+	similarities = similarities[1:]
+
 
 
 	for i in range(0, len(similarities)):	
-		#print(words[i], similarities[i], scores[i])
+		print(words[i], similarities[i], scores[i])
 
 		d = 0.2
 
-		if not (float(scores[i])/10 < similarities[i] + d and float(scores[i])/10 > similarities[i] - d):
-			print(words[i], similarities[i], scores[i])
+#		if not (float(scores[i])/10 < similarities[i] + d and float(scores[i])/10 > similarities[i] - d):
+#			print(words[i], similarities[i], scores[i])
 
 	scores = np.array(scores)
 
