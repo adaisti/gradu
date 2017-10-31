@@ -1,21 +1,11 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 
-
-
-#ajo-ohje
-#ensin print_wordsillä sanat omilla riveillään tiedostoon
-#sitten siitä tiedostosta vektoritiedosto fasttextin print-word-vectorsilla  _vectors -tiedostoon
-#tällä koodilla siitä vertailut
-
-
-
-
-#varmista että skripti tekee mitä pitääkin
-#jos ei niin lähetetään meiliä
-#vastausta odotellessa mennään sitten tällä: yritetään saada itse opetettu samantasoiseksi kuin netistä ladattu
-
-
+'''
+ajo-ohje
+ensin print_wordsillä sanat omilla riveillään tiedostoon
+sitten siitä tiedostosta vektoritiedosto fasttextin print-word-vectorsilla  _vectors -tiedostoon
+tällä koodilla siitä vertailut
+'''
 
 from scipy.spatial.distance import cosine
 from scipy.stats import spearmanr
@@ -23,47 +13,30 @@ import numpy as np
 import argparse
 
 
-
-
 def correlation(args):
-
-
-	f = open(args.vectorfile)	
-	lines = f.read()
-
-	f2 = open(args.scorefile)
-	lines2 = f2.read()
 
 	vectors = []
 	scores = []
 	words = []
 	similarities = []
 
-
-	for line in lines.split("\n"):
+	for line in open(args.vectorfile):
 		vector = np.array(line.split()[1:], dtype=float)
 		vectors.append(vector)
 
-
-	for line in lines2.split("\n"):
+	for line in open(args.scorefile):
 
 		if line == "":
 			continue
 
-		score = line.split("\t")[2]
+		score, word1, word2 = line.split("\t")[2:5]
 		scores.append(score)
-		word1 = line.split("\t")[3]
-		word2 = line.split("\t")[4]
-
-		#word1 = line.split("\t")[3]
-		#word2 = line.split("\t")[4]
 
 		words.append(word1 + " " + word2)
 
-
+	similarities = []
 
 	for i in range(0,len(vectors) - 2, 2):
-#		if (int(vectors[i].all) < 0 and vectors[i].all > 0) or (vectors[i + 1].all < 0 and vectors[i + 1].all > 0 ):
 		if np.all(vectors[i] == 0) or np.all(vectors[i + 1] == 0):
 			similarities.append(0)
 		else:
@@ -76,13 +49,10 @@ def correlation(args):
 
 		d = 0.2
 
-
-		#if not (float(scores[i])/10 < similarities[i] + d and float(scores[i])/10 > similarities[i] - d):
-		#	print(words[i], similarities[i], scores[i])
+		if not (float(scores[i])/10 < similarities[i] + d and float(scores[i])/10 > similarities[i] - d):
+			print(words[i], similarities[i], scores[i])
 
 	scores = np.array(scores)
-
-
 
 	print(spearmanr(similarities, scores))
 
