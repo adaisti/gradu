@@ -1,0 +1,353 @@
+love	sex	6.77	rakkaus	seksi
+tiger	cat	7.35	tiikeri	kissa
+tiger	tiger	10.00	tiikeri	tiikeri
+book	paper	7.46	kirja	paperi
+computer	keyboard	7.62	tietokone	näppäimistö
+computer	internet	7.58	tietokone	internet
+plane	car	5.77	lentokone	kissa	!
+train	car	6.31	juna	auto
+telephone	communication	7.50	puhelin	kommunikaatio
+television	radio	6.77	televisio	radio
+media	radio	7.42	media	radio
+drug	abuse	6.85	huume	väärinkäyttö	!
+bread	butter	6.19	leipä	voi
+cucumber	potato	5.92	kurkku	peruna
+doctor	nurse	7.00	lääkäri	sairaanhoitaja	!
+professor	doctor	6.62	professori	tohtori	!
+student	professor	6.81	opiskelija	professori
+smart	student	4.62	älykäs	opiskelija
+smart	stupid	5.81	älykäs	tyhmä
+company	stock	7.08	yritys	osake	!
+stock	market	8.08	osake	markkinat	!
+stock	phone	1.62	osake	puhelin	!
+stock	CD	1.31	osake	CD	!
+stock	jaguar	0.92	osake	jaguaari	!
+stock	egg	1.81	osake	muna	!
+fertility	egg	6.69	hedelmällisyys	muna
+stock	live	3.73	osake	elävä	!
+stock	life	0.92	osake	elämä	!
+book	library	7.46	kirja	kirjasto
+bank	money	8.12	pankki	raha
+wood	forest	7.73	puu	metsä	!
+money	cash	9.15	raha	käteinen
+professor	cucumber	0.31	professori	kurkku
+king	cabbage	0.23	kuningas	kaali
+king	queen	8.58	kuningas	kuningatar
+king	rook	5.92	kuningas	torni	!
+bishop	rabbi	6.69	piispa	rabbi
+Jerusalem	Israel	8.46	Jerusalem	Israel
+Jerusalem	Palestinian	7.65	Jerusalem	palestiinalainen
+holy	sex	1.62	pyhä	seksi
+fuck	sex	9.44	nussia	seksi	!
+Maradona	football	8.62	Maradona	jalkapallo
+football	soccer	9.03	jalkapallo	jalkapallo	!
+football	basketball	6.81	jalkapallo	koripallo
+football	tennis	6.63	jalkapallo	tennis
+tennis	racket	7.56	tennis	maila	!
+Arafat	peace	6.73	Arafat	rauha
+Arafat	terror	7.65	Arafat	terrori	!
+Arafat	Jackson	2.50	Arafat	Jackson
+law	lawyer	8.38	laki	lakimies
+movie	star	7.38	elokuva	tähti	!
+movie	popcorn	6.19	elokuva	popcorn
+movie	critic	6.73	elokuva	kriitikko	!
+movie	theater	7.92	elokuva	teatteri	!
+physics	proton	8.12	fysiikka	protoni
+physics	chemistry	7.35	fysiikka	kemia
+space	chemistry	4.88	avaruus	kemia
+alcohol	chemistry	5.54	alkoholi	kemia
+vodka	gin	8.46	9	vodka	gini
+vodka	brandy	8.13	vodka	brandy
+drink	car	3.04	juoma	auto
+drink	ear	1.31	juoma	korva
+drink	mouth	5.96	juoma	suu
+drink	eat	6.87	juoda	syödä
+baby	mother	7.85	vauva	äiti
+drink	mother	2.65	juoma	äiti
+car	automobile	8.94	auto	automobiili
+gem	jewel	8.96	korukivi	jalokivi	!
+journey	voyage	9.29	matka	retki	!
+boy	lad	8.83	poika	jätkä	!
+coast	shore	9.10	rannikko	ranta
+asylum	madhouse	8.87	mielisairaala	hullujenhuone
+magician	wizard	9.02	taikuri	velho
+midday	noon	9.29	keskipäivä	puolipäivä
+furnace	stove	8.79	uuni	hella
+food	fruit	7.52	ruoka	hedelmä
+bird	cock	7.10	lintu	kukko	!
+bird	crane	7.38	lintu	kurki	!
+tool	implement	6.46	työkalu	väline	!
+brother	monk	6.27	veli	munkki
+crane	implement	2.69	kurki	väline
+lad	brother	4.46	jätkä	veli
+journey	car	5.85	matka	auto
+monk	oracle	5.00	munkki	oraakkeli
+cemetery	woodland	2.08	hautausmaa	korpi
+food	rooster	4.42	ruoka	kukko
+coast	hill	4.38	rannikko	kukkula
+forest	graveyard	1.85	metsä	hautausmaa
+shore	woodland	3.08	ranta	korpi
+monk	slave	0.92	munkki	orja
+coast	forest	3.15	rannikko	metsä
+lad	wizard	0.92	jätkä	velho
+chord	smile	0.54	sointu	hymy
+glass	magician	2.08	lasi	taikuri
+noon	string	0.54	puolipäivä	naru
+rooster	voyage	0.62	kukko	retki
+money	dollar	8.42	raha	dollari
+money	cash	9.08	raha	käteinen
+money	currency	9.04	raha	valuutta
+money	wealth	8.27	raha	varakkuus
+money	property	7.57	raha	omaisuus
+money	possession	7.29	raha	omistus
+money	bank	8.50	raha	pankki
+money	deposit	7.73	raha	talletus
+money	withdrawal	6.88	raha	nosto	!
+money	laundering	5.65	raha	pesu	!
+money	operation	3.31	raha	operaatio
+tiger	jaguar	8.00	tiikeri	jaguaari
+tiger	feline	8.00	tiikeri	kissaeläin
+tiger	carnivore	7.08	tiikeri	lihansyöjä
+tiger	mammal	6.85	tiikeri	nisäkäs
+tiger	animal	7.00	tiikeri	eläin
+tiger	organism	4.77	tiikeri	organismi
+tiger	fauna	5.62	tiikeri	fauna
+tiger	zoo	5.87	tiikeri	eläintarha
+psychology	psychiatry	8.08	psykologia	psykiatria
+psychology	anxiety	7.00	psykologia	ahdistuneisuus
+psychology	fear	6.85	psykologia	pelko
+psychology	depression	7.42	psykologia	masennus
+psychology	clinic	6.58	psykologia	klinikka
+psychology	doctor	6.42	psykologia	lääkäri
+psychology	Freud	8.21	psykologia	Freud
+psychology	mind	7.69	psykologia	mieli
+psychology	health	7.23	psykologia	terveys
+psychology	science	6.71	psykologia	tiede
+psychology	discipline	5.58	psykologia	tieteenala	!
+psychology	cognition	7.48	psykologia	kognitio
+planet	star	8.45	planeetta	tähti
+planet	constellation	8.06	planeetta	tähtikuvio
+planet	moon	8.08	planeetta	kuu
+planet	sun	8.02	planeetta	aurinko
+planet	galaxy	8.11	planeetta	aurinkokunta
+planet	space	7.92	planeetta	avaruus
+planet	astronomer	7.94	planeetta	astronomi
+precedent	example	5.85	ennakkotapaus	esimerkki
+precedent	information	3.85	ennakkotapaus	informaatio
+precedent	cognition	2.81	ennakkotapaus	kognitio
+precedent	law	6.65	ennakkotapaus	laki	!
+precedent	collection	2.50	ennakkotapaus	kokoelma
+precedent	group	1.77	ennakkotapaus	ryhmä
+precedent	antecedent	6.04	ennakkotapaus	esimuoto	!
+cup	coffee	6.58	kuppi	kahvi
+cup	tableware	6.85	kuppi	astiasto
+cup	article	2.40	kuppi	artikkeli
+cup	artifact	2.92	kuppi	artefakti
+cup	object	3.69	kuppi	esine
+cup	entity	2.15	kuppi	olio
+cup	drink	7.25	kuppi	juoma
+cup	food	5.00	kuppi	ruoka
+cup	substance	1.92	kuppi	aine
+cup	liquid	5.90	kuppi	neste
+jaguar	cat	7.42	jaguaari	kissa
+jaguar	car	7.27	jaguaari	auto	!
+energy	secretary	1.81	energia	sihteeri
+secretary	senate	5.06	sihteeri	senaatti		
+energy	laboratory	5.09	energia	laboratorio		
+computer	laboratory	6.78	tietokone	laboratorio		
+weapon	secret	6.06	ase 	salaisuus		
+FBI	fingerprint	6.94	FBI	sormenjälki		
+FBI	investigation	8.31	FBI	tutkimus		
+investigation	effort	4.59	tutkimus	vaivannäkö	!	
+Mars	water	2.94	Mars	vesi		
+Mars	scientist	5.63	Mars	tiedemies		
+news	report	8.16	uutiset	raportti		
+canyon	landscape	7.53	kanjoni	maisema		
+image	surface	4.56	kuva	pinta	!	
+discovery	space	6.34	löydös	avaruus	!	
+water	seepage	6.56	vesi	vuoto		
+sign	recess	2.38	merkki	välitunti	!	
+Wednesday	news	2.22	keskiviikko	uutiset		
+mile	kilometer	8.66	maili	kilometri		
+computer	news	4.47	tietokone	uutiset		
+territory	surface	5.34	alue	pinta	!	
+atmosphere	landscape	3.69	ilmapiiri	maisema		
+president	medal	3.00	presidentti	mitali		
+war	troops	8.13	sota	sotajoukot		
+record	number	6.31	ennätys	numero	!	
+skin	eye	6.22	iho	silmä		
+Japanese	American	6.50	japanilainen	amerikkalainen		
+theater	history	3.91	teatteri	historia		
+volunteer	motto	2.56	vapaaehtoinen	motto		
+prejudice	recognition	3.00	ennakkoluulo	tunnistaminen		
+decoration	valor	5.63	koriste	urheus		
+century	year	7.59	vuosisata	vuosi		
+century	nation	3.16	vuosisata	kansakunta		
+delay	racism	1.19	viive	rasismi		
+delay	news	3.31	viive	uutiset		
+minister	party	6.63	ministeri	puolue	!	
+peace	plan	4.75	rauha	suunnitelma		
+minority	peace	3.69	vähemmistö	rauha		
+attempt	peace	4.25	yritys	rauha	!	
+government	crisis	6.56	hallitus	kriisi		
+deployment	departure	4.25	käyttöönotto	lähtö		
+deployment	withdrawal	5.88	käyttöönotto	vetäytyminen	!	
+energy	crisis	5.94	energia	kriisi		
+announcement	news	7.56	ilmoitus	uutiset		
+announcement	effort	2.75	ilmoitus	vaivannäkö		
+stroke	hospital	7.03	aivohalvaus	sairaala	!	
+disability	death	5.47	vamma	kuolema		
+victim	emergency	6.47	uhri	hätätilanne		
+treatment	recovery	7.91	hoito	paraneminen		
+journal	association	4.97	lehti	yhdistys		
+doctor	personnel	5.00	lääkäri	henkilökunta		
+doctor	liability	5.19	lääkäri	luotettavuus		
+liability	insurance	7.03	luotettavuus	vakuutus		
+school	center	3.44	koulu	keskus		
+reason	hypertension	2.31	syy	hypertensio		kohonnut verenpaine
+reason	criterion	5.91	syy	kriteeri		
+hundred	percent	7.38	sata	prosentti		
+Harvard	Yale	8.13	Harvard	Yale		
+hospital	infrastructure	4.63	sairaala	infrastruktuuri		
+death	row	5.25	kuolema	rivi	!	yhdyssana
+death	inmate	5.03	kuolema	vanki		
+lawyer	evidence	6.69	lakimies	todiste		
+life	death	7.88	elämä	kuolema		
+life	term	4.50	elämä	toimikausi	!	
+word	similarity	4.75	sana	samanlaisuus		yhdyssana
+board	recommendation	4.47	levy	suositus	!	
+governor	interview	3.25	kuvernööri	haastattelu		
+OPEC	country	5.63	OPEC	maa		
+peace	atmosphere	3.69	rauha	ilmapiiri		
+peace	insurance	2.94	rauha	vakuutus		
+territory	kilometer	5.28	alue	kilometri		
+travel	activity	5.00	matka	aktiviteetti		
+competition	price	6.44	kilpailu	palkinto		
+consumer	confidence	4.13	kuluttaja	luottamus		
+consumer	energy	4.75	kuluttaja	energia		
+problem	airport	2.38	ongelma	lentokenttä		
+car	flight	4.94	auto	lento		
+credit	card	8.06	luotto	kortti		yhdyssana
+credit	information	5.31	luotto	informaatio		
+hotel	reservation	8.03	hotelli	varaus		
+grocery	money	5.94	ruokakauppa	raha		
+registration	arrangement	6.00	rekisteröityminen	järjestely		
+arrangement	accommodation	5.41	järjestely	majoitus		
+month	hotel	1.81	kuukausi	hotelli		
+type	kind	8.97	tyyppi	laji	!	
+arrival	hotel	6.00	saapuminen	hotelli		
+bed	closet	6.72	sänky	kaappi		
+closet	clothes	8.00	kaappi	vaatteet		
+situation	conclusion	4.81	tilanne	johtopäätös		
+situation	isolation	3.88	tilanne	eristys		
+impartiality	interest	5.16	tasapuolisuus	kiinnostus		
+direction	combination	2.25	suunta	yhdistelmä		
+street	place	6.44	katu	paikka		
+street	avenue	8.88	katu	bulevardi		
+street	block	6.88	katu	kortteli		
+street	children	4.94	katu	lapset		yhdyssana
+listing	proximity	2.56	luettelo	läheisyys		
+listing	category	6.38	luettelo	kategoria		
+cell	phone	7.81	solu	puhelin		yhdyssana
+production	hike	1.75	tuotanto	vaellus		
+benchmark	index	4.25	mittapuu	indeksi		
+media	trading	3.88	media	kaupankäynti		
+media	gain	2.88	media	kasvu		
+dividend	payment	7.63	osinko	maksu	!	
+dividend	calculation	6.48	osinko	lasku	!	
+calculation	computation	8.44	lasku	laskelma	!	
+currency	market	7.50	valuutta	markkinat		
+OPEC	oil	8.59	OPEC	öljy		
+oil	stock	6.34	öljy	varasto	!	yhdyssana
+announcement	production	3.38	ilmoitus	tuotanto		
+announcement	warning	6.00	ilmoitus	varoitus		
+profit	warning	3.88	voitto	varoitus		
+profit	loss	7.63	voitto	tappio		
+dollar	yen	7.78	dollari	jeni		
+dollar	buck	9.22	dollari	taala	!	
+dollar	profit	7.38	dollari	voitto		
+dollar	loss	6.09	dollari	tappio		
+computer	software	8.50	tietokone	ohjelmisto		
+network	hardware	8.31	verkosto	laitteisto		
+phone	equipment	7.13	puhelin	varuste		
+equipment	maker	5.91	varuste	tekijä		
+luxury	car	6.47	luksus	auto		yhdyssana
+five	month	3.38	viisi	kuukausi		
+report	gain	3.63	raportti	kasvu		
+investor	earning	7.13	sijoittaja	ansaitseminen		
+liquid	water	7.89	neste	vesi		
+baseball	season	5.97	baseball	kausi	!	yhdyssana
+game	victory	7.03	peli	voitto	!	voitto on nyt merkityksissä victory ja profit
+game	team	7.69	peli	joukkue		
+marathon	sprint	7.47	maraton	pikamatka		
+game	series	6.19	peli	sarja		
+game	defeat	6.97	peli	tappio
+seven	series	3.56	seitsemän	sarja		
+seafood	sea	7.47	kalaruoka	meri		
+seafood	food	8.34	kalaruoka	ruoka		
+seafood	lobster	8.70	kalaruoka	hummeri	!	
+lobster	food	7.81	hummeri	ruoka		
+lobster	wine	5.70	hummeri	viini		
+food	preparation	6.22	ruoka	valmistus		
+video	archive	6.34	video	arkisto		
+start	year	4.06	alku	vuosi		
+start	match	4.47	alku	ottelu		
+game	round	5.97	peli	kierros		
+boxing	round	7.61	nyrkkeily	kierros		yhdyssana
+championship	tournament	8.36	mestaruus	turnaus		
+fighting	defeating	7.41	tappeleminen	päihittäminen		
+line	insurance	2.69	viiva	vakuutus		
+day	summer	3.94	päivä	kesä		
+summer	drought	7.16	kesä	kuivuus		
+summer	nature	5.63	kesä	luonto		
+day	dawn	7.53	päivä	aamunkoitto		
+nature	environment	8.31	luonto	ympäristö		
+environment	ecology	8.81	ympäristö	ekologia		
+nature	man	6.25	luonto	ihminen	!	mies?
+man	woman	8.30	mies	nainen		
+man	governor	5.25	mies	kuvernööri		
+murder	manslaughter	8.53	murha	tappo		
+soap	opera	7.94	saippua	ooppera	!	yhdyssana
+opera	performance	6.88	ooppera	esitys		
+life	lesson	5.94	elämä	opetus		yhdyssana
+focus	life	4.06	fokus	elämä		
+production	crew	6.25	tuotanto	työryhmä	!	
+television	film	7.72	televisio	elokuva		
+lover	quarrel	6.19	rakastaja	erimielisyys		
+viewer	serial	2.97	katsoja	jatkokertomus	!	
+possibility	girl	1.94	mahdollisuus	tyttö		
+population	development	3.75	väkiluku	kehitys	!	
+morality	importance	3.31	moraali	tärkeys		
+morality	marriage	3.69	moraali	avioliitto		
+Mexico	Brazil	7.44	Meksiko	Brasilia		
+gender	equality	6.41	sukupuoli	tasa-arvo		yhdyssana
+change	attitude	5.44	muutos	asenne		
+family	planning	6.25	perhe	suunnittelu		yhdyssana
+opera	industry	2.63	ooppera	teollisuus		
+sugar	approach	0.88	sokeri	lähestymistapa		
+practice	institution	3.19	harjoitus	instituutio		
+ministry	culture	4.69	ministeri	kulttuuri		
+problem	challenge	6.75	ongelma	haaste		
+size	prominence	5.31	koko	etevyys		
+country	citizen	7.31	maa	kansalainen		
+planet	people	5.75	planeetta	ihmiset		
+development	issue	3.97	kehitys	ongelma	!	
+experience	music	3.47	kokemus	musiikki		
+music	project	3.63	musiikki	projekti		
+glass	metal	5.56	lasi	metalli		
+aluminum	metal	7.83	alumiini	metalli		
+chance	credibility	3.88	mahdollisuus	uskottavuus		
+exhibit	memorabilia	5.31	näyttelyesine	muistoesine		onkohan ihmiset tienneet nuo sanat
+concert	virtuoso	6.81	konsertti	virtuoosi		
+rock	jazz	7.59	rock	jazz		
+museum	theater	7.19	museo	teatteri		
+observation	architecture	4.38	havainto	arkkitehtuuri		
+space	world	6.53	avaruus	maailma	!	
+preservation	world	6.19	säilöntä	maailma		
+admission	ticket	7.69	sisäänpääsy	lippu		
+shower	thunderstorm	6.31	suihku	ukkosmyrsky		
+shower	flood	6.03	suihku	tulva		
+weather	forecast	8.34	sää	ennuste		yhdyssana
+disaster	area	6.25	katastrofi	alue		yhdyssana
+governor	office	6.34	kuvernööri	virka	!	
+architecture	century	3.78	arkkitehtuuri	vuosisata		
