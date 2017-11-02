@@ -12,6 +12,19 @@ from scipy.stats import spearmanr
 import numpy as np
 import argparse
 
+def selected(similarities, scores, scorefile, words):
+	similarities2 = []
+	scores2 = []
+	i = 0
+	for line in open(scorefile):
+		line = line.strip()
+		if len(line.split("\t")) < 6:
+			similarities2.append(similarities[i])
+			scores2.append(scores[i])
+			#print(words[i])
+		i += 1
+	#print(len(similarities2))
+	print(spearmanr(similarities2, scores2))
 
 def correlation(args):
 
@@ -24,7 +37,9 @@ def correlation(args):
 		vector = np.array(line.split()[1:], dtype=float)
 		vectors.append(vector)
 
-	for line in open(args.scorefile):
+	scorefile = args.scorefile
+
+	for line in open(scorefile):
 
 		if line == "":
 			continue
@@ -42,12 +57,13 @@ def correlation(args):
 		else:
 			similarities.append(1 - cosine(vectors[i], vectors[i + 1]))
 
-	similarities = similarities[1:]
+	# vektorit on opetettu sillail että kaksi ekaa on sana1 ja sana2
+#	similarities = similarities[1:]
 
 
 
 	for i in range(0, len(similarities)):	
-		print(words[i], similarities[i], scores[i])
+#		print(words[i], similarities[i], scores[i])
 
 		d = 0.2
 
@@ -56,7 +72,10 @@ def correlation(args):
 
 	scores = np.array(scores)
 
-	print(spearmanr(similarities, scores))
+	if args.selected:
+		selected(similarities, scores, scorefile, words)
+	else:
+		print(spearmanr(similarities, scores))
 
 
 
@@ -65,6 +84,7 @@ def main():
 
 	parser.add_argument("--vectorfile", "-v", type=str, required=True)
 	parser.add_argument("--scorefile", "-s", type=str, required=True)
+	parser.add_argument("--selected", type=bool)
 	args = parser.parse_args()
 	correlation(args)
 
