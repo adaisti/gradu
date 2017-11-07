@@ -45,7 +45,7 @@ def compare(args):
 
 			sim = 1 - cosine(d1, d2)
 			
-			if sim > 0.9:
+			if sim > 0.6 and sim != 1:
 				print(w1, w2, w3, w4, sim)
 
 
